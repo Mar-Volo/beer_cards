@@ -23,7 +23,7 @@ function App() {
   return (
     <Layout>
       <Header />
-      <main>
+      <main className="main">
         <section className="beers__section">
         <Container className="beers__container">
         <BeersList items={beers} />

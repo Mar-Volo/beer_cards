@@ -11,6 +11,9 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
 }
+html, body {
+  height: 100%;
+}
 body {
     margin: 0 auto;
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -30,6 +33,12 @@ body {
   max-width: 100%;
   height: auto;
   }
+  .main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .beers__section {
     padding: 40px 0;
   }
@@ -37,6 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .header__container {
     display: flex;

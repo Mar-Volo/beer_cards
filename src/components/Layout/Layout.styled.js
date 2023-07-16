@@ -4,8 +4,7 @@ export const GlobalContainer = styled.div`
 background-color: lightgrey;
 display: flex;
 flex-direction: column;
-min-width: 100%;
-min-height: 100vh;
+height: 100vh;
 `;
 
 export const Container = styled.div`

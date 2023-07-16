@@ -4,11 +4,17 @@ export const HeaderBox = styled.header`
 padding: 20px 0;
 background-color: black;
 box-shadow: 0 0 20px #000;
+width: 100%;
 `
 export const Logo = styled.span`
 font-size: 70px;
 text-transform: uppercase;
 color: #ececec;
+transition: all 300ms ease;
+&:hover,
+&:focus {
+    text-shadow: -2px 4px 10px white;
+}
 `
 export const Form = styled.form`
   display: flex;
