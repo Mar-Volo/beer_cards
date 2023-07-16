@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif; */
@@ -29,6 +29,19 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+  }
+  .beers__section {
+    padding: 40px 0;
+  }
+  .beers__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 `
 
