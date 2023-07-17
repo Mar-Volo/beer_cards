@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <HeaderBox>
       <Container className="header__container">
-        <Logo>Beer</Logo>
+        <Logo>Get over beer!</Logo>
         <Form>
           <Input
             placeholder="Some beer"

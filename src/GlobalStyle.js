@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import 'modern-normalize';
+import { createGlobalStyle } from "styled-components";
+import "modern-normalize";
 
 export const GlobalStyle = createGlobalStyle`
 *, 
@@ -22,6 +22,7 @@ body {
       font-family: 'Roboto', sans-serif; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #3f3f3f;
   }
   
   code {
@@ -47,11 +48,12 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 15px;
+    position: relative;
   }
   .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-`
-
+`;

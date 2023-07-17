@@ -7,7 +7,7 @@ box-shadow: 0 0 20px #000;
 width: 100%;
 `
 export const Logo = styled.span`
-font-size: 70px;
+font-size: 40px;
 text-transform: uppercase;
 color: #ececec;
 transition: all 300ms ease;
