@@ -44,12 +44,11 @@ body {
     padding: 40px 0;
   }
   .beers__container {
+    padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     overflow: hidden;
-    padding: 15px;
-    position: relative;
   }
   .header__container {
     display: flex;
