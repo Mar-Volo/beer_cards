@@ -70,6 +70,14 @@ function App() {
   let currentIndex = 0;
 
   useEffect(() => {
+      async function fetchData() {
+        try {
+          const response = await FetchBeer(page);
+          setBeerList(response);
+        } catch (error) {
+          console.log(error.message);
+        }
+    }
     fetchData();
   }, [page, setBeerList]);
 
