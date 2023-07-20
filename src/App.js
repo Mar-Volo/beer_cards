@@ -55,20 +55,10 @@ function App() {
   const {
     beerList,
     setBeerList,
-    // addBeers,
-    removeBeer,
-    selectedBeers,
-    addSelectedBeer,
-    removeSelectedBeer,
     loadedBeers,
   } = useBeerStore((state) => ({
     beerList: state.beerList,
     setBeerList: state.setBeerList,
-    addBeers: state.addBeers,
-    removeBeer: state.removeBeer,
-    selectedBeers: state.selectedBeers,
-    addSelectedBeer: state.addSelectedBeer,
-    removeSelectedBeer: state.removeSelectedBeer,
     loadedBeers: state.loadedBeers,
   }));
 
@@ -89,21 +79,6 @@ function App() {
       setBeerList(response);
     } catch (error) {
       console.log(error.message);
-    }
-  };
-
-  const handleDeleteSelected = () => {
-    selectedBeers.forEach((beerId) => {
-      removeBeer(beerId);
-      removeSelectedBeer(beerId);
-    });
-  };
-
-  const handleBeerSelection = (beerId) => {
-    if (selectedBeers.includes(beerId)) {
-      removeSelectedBeer(beerId);
-    } else {
-      addSelectedBeer(beerId);
     }
   };
 
@@ -211,9 +186,6 @@ function App() {
                 currentIndex,
                 currentIndex + totalItemsPerPage
               )}
-              selectedBeers={selectedBeers}
-              onDelete={handleDeleteSelected}
-              onSelection={handleBeerSelection}
               onScroll={handleScroll}
             />
           </Container>
