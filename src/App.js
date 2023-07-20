@@ -55,7 +55,7 @@ function App() {
   const {
     beerList,
     setBeerList,
-    addBeers,
+    // addBeers,
     removeBeer,
     selectedBeers,
     addSelectedBeer,
