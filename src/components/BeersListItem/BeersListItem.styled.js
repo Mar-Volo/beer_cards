@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ListItem = styled.li`
   width: 265px;
   border-radius: 15px;
-  box-shadow: 0 0 4px #fff;
-  background-color: #757474;
+  box-shadow: 0 0 3px #fff;
+  background-color: #4b4b4b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@ export const ListItem = styled.li`
   &:focus {
     filter: saturate(1);
     transform: scale(1.02);
-    box-shadow: 0 0 6px #fff;
+    box-shadow: 0 0 7px #fff;
   }
 `;
 export const Img = styled.img`

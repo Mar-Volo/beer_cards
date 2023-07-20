@@ -2,6 +2,9 @@ import { createGlobalStyle } from "styled-components";
 import "modern-normalize";
 
 export const GlobalStyle = createGlobalStyle`
+:root {
+  scroll-behavior: smooth;
+}
 *, 
 *::before,
 *::after {
@@ -22,7 +25,7 @@ body {
       font-family: 'Roboto', sans-serif; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #3f3f3f;
+    background-color: #313030;
   }
   
   code {
@@ -42,6 +45,10 @@ body {
   }
   .beers__section {
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .beers__container {
     padding: 15px;
@@ -49,6 +56,37 @@ body {
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
+    margin-bottom: 30px;
+  }
+.beers__btn {
+  display: flex;
+  gap: 20px;
+}
+
+  .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b4b4b;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 0 3px #fff;
+    transition: all 300ms ease;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 6px #fff;
+    }
+    
+    &:focus {
+      box-shadow: 0 0 6px #fff;
+    }
   }
   .header__container {
     display: flex;

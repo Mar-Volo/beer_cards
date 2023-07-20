@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderBox = styled.header`
 padding: 20px 0;
 background-color: black;
-box-shadow: 0 0 20px #000;
+box-shadow: 0 0 3px #fff;
 width: 100%;
 `
 export const Logo = styled.span`
