@@ -1,15 +1,11 @@
 import { create } from "zustand";
 
 const useBeerStore = create((set) => ({
-  beerList: [],
-  loadedBeers: [],
-  setBeerList: (list) =>
+  beersList: [],
+  setBeersList: (list) =>
     set((state) => ({
-      beerList: list,
-      loadedBeers: [...state.loadedBeers, ...list],
+      beersList: [...state.beersList, ...list],
     })),
 }));
 
 export default useBeerStore;
-
-
