@@ -38,7 +38,6 @@ body {
   height: auto;
   }
   .main {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +45,6 @@ body {
   .beers__section {
     padding: 40px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -54,8 +52,7 @@ body {
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    overflow: hidden;
+    justify-content: center;
     margin-bottom: 30px;
   }
 .beers__btn {

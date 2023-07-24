@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const ListItem = styled.li`
-  width: 265px;
+  width: 600px;
+  height: calc((100vh - 86px) / 5.2);
   border-radius: 15px;
   box-shadow: 0 0 3px #fff;
   background-color: #4b4b4b;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  padding: 10px 0;
+  justify-content: flex-start;
+  padding: 10px;
   transition: all 300ms ease;
   filter: saturate(0.3);
   &:hover,
@@ -20,7 +20,8 @@ export const ListItem = styled.li`
   }
 `;
 export const Img = styled.img`
-  width: 100px;
+  height: 130px;
+  width: auto;
   object-fit: cover;
   object-position: center;
 `;
